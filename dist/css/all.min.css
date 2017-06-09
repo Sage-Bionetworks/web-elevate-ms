@@ -8251,14 +8251,17 @@ main {
       display: inline-block; }
       .banner .nav-primary .nav li a {
         display: block;
-        padding: 0 20px;
+        padding: 0;
+        margin: 30px 20px;
+        line-height: 20px;
         color: #506BCB;
-        line-height: 80px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
         font-size: 14px; }
         .banner .nav-primary .nav li a:hover {
           color: #f58732; }
+        .banner .nav-primary .nav li a.current-page {
+          border-bottom: 2px solid #506BCB; }
         .banner .nav-primary .nav li a.signup-cta {
           background: #f58732;
           border-radius: 2px;
@@ -8270,13 +8273,6 @@ main {
           .banner .nav-primary .nav li a.signup-cta:hover {
             background: #3cbea2;
             color: #fff; }
-
-.banner .nav-primary .nav li a:active {
-  border-bottom: 2px solid #f58732;
-}
-.banner .nav-primary .nav li a:focus {
-  border-bottom: 2px solid #f58732;
-}
 
   /*li a:focus {*/
   /*text-decoration: 2px solid #f58732 !important; }*/
