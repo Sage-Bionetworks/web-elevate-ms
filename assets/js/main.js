@@ -21,7 +21,7 @@ $(document).ready(function(){
 
     })();
 
-    var videoLink = '<iframe src="//player.vimeo.com/video/216231561?title=0&amp;byline=0&amp;portrait=0&amp;color=e64f38" width="250" height="444.5" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';  
+    var videoLink = '<iframe src="https://player.vimeo.com/video/219149500?color=6dedfc&title=0&byline=0&portrait=0" width="250" height="444.5" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
 
     $('.playVid').click(function(){
         $('#iFrame').html(videoLink);    

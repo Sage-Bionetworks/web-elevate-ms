@@ -15,7 +15,8 @@ body {
   margin: 0; }
 
 article, aside, footer, header, nav, section {
-  display: block; }
+  display: block;
+}
 
 h1 {
   font-size: 2em;
@@ -469,6 +470,14 @@ hr {
 .img-fluid {
   max-width: 100%;
   height: auto; }
+
+.img-home {
+  height: 75%;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
 .img-thumbnail {
   padding: .25rem;
@@ -7258,11 +7267,13 @@ main {
   padding-right: 0 !important; }
 
 .blue_green_bg {
-  background: #3cbea2; }
+  background: #506BCB; }
 
 .orange_bg {
-  background: #f58732; }
+  background: #66BB6A; }
 
+.dark_yellow_bg {
+  background: #e5b752;  }
 /*
 .green_bg { 
     background: $green url('../images/JourneyPro-Background-Green.png') no-repeat center;
@@ -7273,7 +7284,7 @@ main {
   background: #63b05e; }
 
 .dark_green_bg {
-  background: #408d7d; }
+  background: #2D5c8b; }
 
 .yellow_bg {
   background: #e5b752; }
@@ -7309,21 +7320,40 @@ main {
     color: #f58732; }
 
 .down-anchor {
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
+  width: 80px;
+  height: 80px;
+  line-height: 120px;
   color: #fff;
   text-align: center;
   display: block;
-  bottom: 20px;
+  bottom: 40px;
   left: 50%;
   margin-left: -30px;
   position: absolute;
   font-size: 28px;
   border-radius: 50%; }
+.down-anchor p {
+  height: 3.5em;
+  line-height: 1em;
+  color: white;
+  text-align: center;
+  display: block;
+  bottom: 1px;
+  left: 40%;
+  margin-left: -30px;
+  position: absolute;
+  font-size: 14px;
+  border-radius: 50%;
+}
   .down-anchor:hover, .down-anchor:focus {
     color: #fff;
     background: rgba(255, 255, 255, 0.3); }
+
+@media screen and (max-width:480px) {
+  .down-anchor {
+    display: none;
+  }
+}
 
 .section_footer .top-half {
   background: url(https://static.pexels.com/photos/199354/pexels-photo-199354.jpeg) no-repeat center;
@@ -8198,11 +8228,12 @@ main {
   right: 0;
   z-index: 2;
   background: #fff;
-  height: 80px; }
+  /*height: 80px; */
+}
   .banner .brand {
     font-size: 20px;
     line-height: 80px;
-    color: #408d7d;
+    color: #506BCB;
     position: relative;
     height: 80px;
     display: inline-block;
@@ -8221,7 +8252,7 @@ main {
       .banner .nav-primary .nav li a {
         display: block;
         padding: 0 20px;
-        color: #408d7d;
+        color: #506BCB;
         line-height: 80px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
@@ -8239,6 +8270,16 @@ main {
           .banner .nav-primary .nav li a.signup-cta:hover {
             background: #3cbea2;
             color: #fff; }
+
+.banner .nav-primary .nav li a:active {
+  border-bottom: 2px solid #f58732;
+}
+.banner .nav-primary .nav li a:focus {
+  border-bottom: 2px solid #f58732;
+}
+
+  /*li a:focus {*/
+  /*text-decoration: 2px solid #f58732 !important; }*/
 
 .hamburger-menu {
   position: fixed;
@@ -8382,9 +8423,10 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 15px 0; }
+  padding: 15px 0;
+  background-color: white;}
   .content-info p, .content-info a {
-    color: #fff;
+    color: #506BCB;
     margin: 0 auto;
     line-height: 12px;
     font-size: 9px; }
@@ -8403,7 +8445,7 @@ main {
       float: right;
       margin: 0 auto;
       line-height: 1;
-      color: #fff;
+      color: #506BCB;
       font-size: 12px; }
       .content-info .nav.right-links .social {
         background: #fff;
@@ -8420,15 +8462,15 @@ main {
           font-size: 20px; }
         .content-info .nav.right-links .social:hover {
           background: #f58732;
-          color: #fff; }
+          color: #506BCB; }
 
 .reg_page .content-info {
-  background: #408d7d;
+  background: white;
   position: relative; }
 
 @media (max-width: 768px) {
   .content-info {
-    background: #408d7d;
+    background: white;
     position: relative; } }
 
 /*
