@@ -34,6 +34,20 @@
             float: right;
             margin-top: 5px;
         }
+
+        .down-anchor {
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            line-height: 60px;
+        }
+
+        .down-anchor.first {
+            width: 80px;
+            height: 80px;
+            bottom: 40px;
+            line-height: 120px;
+        }
     </style>
 
 
@@ -104,12 +118,10 @@
                 </div>
             </div>
         </div>
-
-        <a href="#" class="down-anchor" title="Scroll Down">
+        <a href="#how" class="down-anchor first" title="Scroll Down">
             <p>Scroll Down</p>
             <span style="display: none">Scroll Down</span>
             <i class="ion-chevron-down"></i>
-
         </a>
     </div>
 
@@ -371,7 +383,7 @@
                 </ul>
             </div>
         </div>
-        <!--<a href="#" class="down-anchor"></a>-->
+        <a href="#research" class="down-anchor"><i class="ion-chevron-down"></i></a>
     </div>
     <div class="section dark_yellow_bg fp-normal-scroll" id="who-is-doing-the-research">
         <div class="container">
@@ -437,7 +449,7 @@
 
 
         </div>
-        <!--<a href="#" class="down-anchor"></a>-->
+        <a href="#signup" class="down-anchor"><i class="ion-chevron-down"></i></a>
     </div>
     <div class="section section_footer dark_green_bg fp-normal-scroll" id="signup-now">
         <div class="container">
@@ -526,7 +538,6 @@
         } else {
             $('#fullpage').fullpage({
                 anchors: ['study', 'how', 'research', 'signup'],
-                navigation: true,
                 navigationPosition: 'left',
                 navigationTooltips: ['The Study', 'How It Works', 'Who is Involved', 'Signup Now'],
                 showActiveTooltip: true,
@@ -540,9 +551,7 @@
                 }
             });
         }
-        $('.down-anchor').click(function () {
-            $.fn.fullpage.moveSectionDown();
-        });
+
     </script>
 </body>
 </html>

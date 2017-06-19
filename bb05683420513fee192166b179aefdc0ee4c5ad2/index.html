@@ -46,6 +46,20 @@
                 padding-right: 5%;
             }
         }
+
+        .down-anchor {
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            line-height: 60px;
+        }
+
+        .down-anchor.first {
+            width: 80px;
+            height: 80px;
+            bottom: 40px;
+            line-height: 120px;
+        }
     </style>
 
 
@@ -113,7 +127,7 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="down-anchor" title="Scroll Down">
+        <a href="#help-us-understand" class="down-anchor first" title="Scroll Down">
             <p>Scroll Down</p>
             <span style="display: none">Scroll Down</span>
             <i class="ion-chevron-down"></i>
@@ -140,7 +154,7 @@
                 </div>
             </div>
         </div>
-        <!--<a href="#" class="down-anchor"></a>-->
+        <a href="#tell-story" class="down-anchor"><i class="ion-chevron-down"></i></a>
     </div>
     <div class="section yellow_bg fp-normal-scroll" id="tell-your-story">
         <div class="container">
@@ -161,7 +175,7 @@
                 </div>
             </div>
         </div>
-        <!--<a href="#" class="down-anchor"></a>-->
+        <a href="#become-a-partner" class="down-anchor"><i class="ion-chevron-down"></i></a>
     </div>
     <div class="section section_footer dark_green_bg fp-normal-scroll" id="signup-now">
         <div class="container">
@@ -238,24 +252,31 @@
 <script>
     var width = $(window).width();
     if (width < 768) {
+        $('.slider').slick({
+            autoplay: false,
+            adaptiveHeight: true,
+            pauseOnHover: false
+        });
+        $('.sliderNext').click(function () {
+            $('.slider').slick('slickNext');
+        });
+        $('.sliderPrev').click(function () {
+            $('.slider').slick('slickPrev');
+        });
     } else {
         $('#fullpage').fullpage({
-            anchors: ['study', 'how', 'research', 'signup'],
-            navigation: true,
+            anchors: ['story', 'help-us-understand', 'tell-story', 'become-a-partner'],
             navigationPosition: 'left',
             navigationTooltips: ['Your Story', 'Help Us Understand', 'Telling Your Story', 'Signup Now'],
-            showActiveTooltip: true,
             slidesNavigation: true,
             scrollBar: true,
             hybrid: true,
             fitToSection: false,
+
             afterLoad: function (anchorLink, index) {
             }
         });
     }
-    $('.down-anchor').click(function () {
-        $.fn.fullpage.moveSectionDown();
-    });
 </script>
 </body>
 </html>
