@@ -15,43 +15,62 @@
         #thankyou {
             margin: 3em 0 0 0;
         }
+
         #thankyou h3 {
             animation: fadein 2s;
             -moz-animation: fadein 2s; /* Firefox */
             -webkit-animation: fadein 2s; /* Safari and Chrome */
             -o-animation: fadein 2s; /* Opera */
         }
+
         @keyframes fadein {
             from {
-                opacity:0;
-            }
-            to {
-                opacity:1;
-            }
-        }
-        @-moz-keyframes fadein { /* Firefox */
-            from {
-                opacity:0;
-            }
-            to {
-                opacity:1;
-            }
-        }
-        @-webkit-keyframes fadein { /* Safari and Chrome */
-            from {
-                opacity:0;
-            }
-            to {
-                opacity:1;
-            }
-        }
-        @-o-keyframes fadein { /* Opera */
-            from {
-                opacity:0;
+                opacity: 0;
             }
             to {
                 opacity: 1;
             }
+        }
+
+        @-moz-keyframes fadein { /* Firefox */
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes fadein { /* Safari and Chrome */
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @-o-keyframes fadein { /* Opera */
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .down-anchor {
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            line-height: 60px;
+        }
+
+        .down-anchor.first {
+            width: 80px;
+            height: 80px;
+            bottom: 40px;
+            line-height: 120px;
         }
 
     </style>
@@ -69,7 +88,19 @@
                 <div class="nav-wrap">
                     <nav class="nav-primary left-nav">
                         <a class="brand hidden-md-down" href="#">elevateMS</a>
-                        <div class="menu-menu-1-container"><ul id="menu-menu-1" class="nav"><li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-4 current_page_item menu-item-44 nav-item active"><a href="" class="nav-link active">Home</a></li><li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11 nav-item"><a href="about/" class="nav-link">About</a></li><li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12 nav-item"><a href="contact/" class="nav-link">Contact</a></li></ul></div>
+                        <div class="menu-menu-1-container">
+                            <ul id="menu-menu-1" class="nav">
+                                <li id="menu-item-44"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-4 current_page_item menu-item-44 nav-item active">
+                                    <a href="index.html" class="nav-link active">Home</a></li>
+                                <li id="menu-item-11"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11 nav-item">
+                                    <a href="about/" class="nav-link">About</a></li>
+                                <li id="menu-item-12"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12 nav-item">
+                                    <a href="contact/" class="nav-link">Contact</a></li>
+                            </ul>
+                        </div>
                     </nav>
                     <nav class="nav-primary">
                         <ul class="nav">
@@ -83,28 +114,32 @@
             </div>
         </div>
     </div>
-</header><div id="fullpage">
+</header>
+<div id="fullpage">
     <div class="section blue_green_bg fp-normal-scroll" id="your-story">
         <div class="container">
             <div class="row flex-items-xs-middle">
                 <div class="col-xs-12 col-sm-12 col-md-6">
                     <div class="entry">
-                        <a class="play-link playVid" data-toggle="modal" data-target="#videoModal" href="#"><i class="ion-ios-play"></i></a>
+                        <a class="play-link playVid" data-toggle="modal" data-target="#videoModal" href="#"><i
+                                class="ion-ios-play"></i></a>
                         <figure class="viddeo-placeholder">
-                            <img src="assets/images/bg.jpg" class="img-fluid" />
+                            <img src="assets/images/bg.jpg" class="img-fluid"/>
                         </figure>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6">
                     <div class="entry">
                         <h1>Your Story</h1>
-                        <p>Living with MS is an ever-changing story. MS can bring on symptoms and relapses unexpectedly. Some days are easy, while on other days your MS symptoms consume your story.</p>
-                        <a href="#" data-toggle="modal" data-target="#videoModal" class="btn btn-opaque playVid">Watch the Video</a>
+                        <p>Living with MS is an ever-changing story. MS can bring on symptoms and relapses unexpectedly.
+                            Some days are easy, while on other days your MS symptoms consume your story.</p>
+                        <a href="#" data-toggle="modal" data-target="#videoModal" class="btn btn-opaque playVid">Watch
+                            the Video</a>
                     </div>
                 </div>
             </div>
         </div>
-        <a href="#" class="down-anchor" title="Scroll Down">
+        <a href="#how" class="down-anchor first" title="Scroll Down">
             <p>Scroll Down</p>
             <span style="display: none">Scroll Down</span>
             <i class="ion-chevron-down"></i>
@@ -115,50 +150,58 @@
             <div class="row flex-items-xs-middle">
                 <div class="col-xs-12 col-sm-12 col-md-6">
                     <div class="entry">
-                        <figure><img src="assets/images/JourneyPro-AboutStudy.png" class="img-fluid" /></figure>
+                        <figure><img src="assets/images/JourneyPro-AboutStudy.png" class="img-fluid"/></figure>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6">
                     <div class="entry">
                         <h1>Help Us Understand</h1>
-                        <p>No two people are alike when it comes to living with Multiple Sclerosis (MS).  The elevateMS study  is an effort to better understand what may trigger flare up of MS symptoms?  In research, every experience counts. Whether you have MS, are touched by someone who has or has had MS, or you simply want to help, we invite you to participate in this study and help us understand MS.</p>
+                        <p>No two people are alike when it comes to living with Multiple Sclerosis (MS). The elevateMS
+                            study is an effort to better understand what may trigger flare up of MS symptoms? In
+                            research, every experience counts. Whether you have MS, are touched by someone who has or
+                            has had MS, or you simply want to help, we invite you to participate in this study and help
+                            us understand MS.</p>
 
                     </div>
                 </div>
             </div>
         </div>
-        <!--<a href="#" class="down-anchor"></a>-->
+        <a href="#research" class="down-anchor"><i class="ion-chevron-down"></i></a>
     </div>
     <div class="section yellow_bg fp-normal-scroll" id="tell-your-story">
         <div class="container">
             <div class="row flex-items-xs-middle">
                 <div class="col-xs-12 col-sm-12 col-md-6">
                     <div class="entry">
-                        <figure><img src="assets/images/your-story-img.png" class="img-fluid" /></figure>
+                        <figure><img src="assets/images/your-story-img.png" class="img-fluid"/></figure>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6">
                     <div class="entry">
                         <h1>Telling Your Story</h1>
-                        <p>Life with MS isn’t a one size fits all.  Everyone has unique experiences even though there are common symptoms. elevateMS is a tool for you to understand your MS symptoms and the factors that impact you. Reflecting on your story over time may provide you with insights into your MS Story and your overall wellness.</p>
+                        <p>Life with MS isn’t a one size fits all. Everyone has unique experiences even though there are
+                            common symptoms. elevateMS is a tool for you to understand your MS symptoms and the factors
+                            that impact you. Reflecting on your story over time may provide you with insights into your
+                            MS Story and your overall wellness.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!--<a href="#" class="down-anchor"></a>-->
+        <a href="#signup" class="down-anchor"><i class="ion-chevron-down"></i></a>
     </div>
     <div class="section section_footer dark_green_bg fp-normal-scroll" id="signup-now">
         <div class="container">
             <div class="row flex-items-xs-middle">
                 <div class="col-xs-12 col-sm-12 col-md-6">
                     <div class="entry">
-                        <figure><img src="assets/images/JourneyPro-SignUpFooter.png" class="img-fluid" /></figure>
+                        <figure><img src="assets/images/JourneyPro-SignUpFooter.png" class="img-fluid"/></figure>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6">
                     <div class="entry">
                         <h1>Become a Partner</h1>
-                        <p>We are releasing this research app soon. Want to be the first to try it out? Leave us your email address to be notified when it’s available.</p>
+                        <p>We are releasing this research app soon. Want to be the first to try it out? Leave us your
+                            email address to be notified when it’s available.</p>
 
                         <!--Thank you message after signing up-->
                         <div id="thankyou">
@@ -175,10 +218,12 @@
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="ion-android-close"></i></button>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i
+                    class="ion-android-close"></i></button>
             <div class="modal-body">
                 <div class="embed-responsive embed-responsive-16by9 video-embed" id="iFrame"></div>
             </div>
@@ -195,8 +240,10 @@
             <div class="col-xs-12 col-sm-12 col-md-5">
                 <ul class="nav list-unstyled right-links text-right">
                     <li><p>© 2017 elevateMS</p></li>
-                    <li><a href="privacy-policy">Privacy Policy</a></li>|
-                    <li><a href="faq">FAQs</a></li>|
+                    <li><a href="privacy-policy">Privacy Policy</a></li>
+                    |
+                    <li><a href="faq">FAQs</a></li>
+                    |
                     <li><a href="support">Support</a></li>
                 </ul>
             </div>
@@ -207,10 +254,21 @@
 <script>
     var width = $(window).width();
     if (width < 768) {
+        $('.slider').slick({
+            autoplay: false,
+            adaptiveHeight: true,
+            pauseOnHover: false
+        });
+        $('.sliderNext').click(function () {
+            $('.slider').slick('slickNext');
+        });
+        $('.sliderPrev').click(function () {
+            $('.slider').slick('slickPrev');
+        });
+
     } else {
         $('#fullpage').fullpage({
-            anchors: ['study', 'how','research', 'signup'],
-            navigation: true,
+            anchors: ['study', 'how', 'research', 'signup'],
             navigationPosition: 'left',
             navigationTooltips: ['Your Story', 'Help Us Understand', 'Telling Your Story', 'Signup Now'],
             showActiveTooltip: true,
@@ -218,13 +276,10 @@
             scrollBar: true,
             hybrid: true,
             fitToSection: false,
-            afterLoad: function(anchorLink, index){
+            afterLoad: function (anchorLink, index) {
             }
         });
     }
-    $('.down-anchor').click(function(){
-        $.fn.fullpage.moveSectionDown();
-    });
 </script>
 </body>
 </html>

@@ -13,51 +13,57 @@
     <link href="../dist/css/all.min.css" rel="stylesheet">
 
     <style>
-    #thankyou {
-        margin: 3em 0 0 0;
-    }
-    #thankyou h2 {
-        animation: fadein 2s;
-        -moz-animation: fadein 2s; /* Firefox */
-        -webkit-animation: fadein 2s; /* Safari and Chrome */
-        -o-animation: fadein 2s; /* Opera */
-    }
-    @keyframes fadein {
-        from {
-            opacity:0;
+        #thankyou {
+            margin: 3em 0 0 0;
         }
-        to {
-            opacity:1;
+
+        #thankyou h2 {
+            animation: fadein 2s;
+            -moz-animation: fadein 2s; /* Firefox */
+            -webkit-animation: fadein 2s; /* Safari and Chrome */
+            -o-animation: fadein 2s; /* Opera */
         }
-    }
-    @-moz-keyframes fadein { /* Firefox */
-        from {
-            opacity:0;
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
-        to {
-            opacity:1;
+
+        @-moz-keyframes fadein { /* Firefox */
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
-    }
-    @-webkit-keyframes fadein { /* Safari and Chrome */
-        from {
-            opacity:0;
+
+        @-webkit-keyframes fadein { /* Safari and Chrome */
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
-        to {
-            opacity:1;
+
+        @-o-keyframes fadein { /* Opera */
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
-    }
-    @-o-keyframes fadein { /* Opera */
-        from {
-            opacity:0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
+
         h5 {
             line-height: 1.5em;
         }
-</style>
+    </style>
 
 </head>
 
@@ -75,9 +81,15 @@
                         <a class="brand hidden-md-down" href="../">elevateMS</a>
                         <div class="menu-menu-1-container">
                             <ul id="menu-menu-1" class="nav">
-                                <li id="menu-item-44" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-4 current_page_item menu-item-44 nav-item active"><a href="../" class="nav-link active">Home</a></li>
-                                <li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11 nav-item"><a href="../about/" class="nav-link">About</a></li>
-                                <li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12 nav-item"><a href="../contact/" class="nav-link">Contact</a></li>
+                                <li id="menu-item-44"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item page-item-4 current_page_item menu-item-44 nav-item active">
+                                    <a href="../" class="nav-link active">Home</a></li>
+                                <li id="menu-item-11"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11 nav-item">
+                                    <a href="../about/" class="nav-link">About</a></li>
+                                <li id="menu-item-12"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12 nav-item">
+                                    <a href="../contact/" class="nav-link">Contact</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -96,16 +108,19 @@
 </header>
 
 <section class="sec-wrap orange_bg contact-wrap">
-    <script type="text/javascript">var submitted=false;</script>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='thankyou.html';}"></iframe>
-    <form action="https://docs.google.com/a/sagebase.org/forms/d/e/1FAIpQLSeoAtVSk1nH_1MIhoifmYvvFHaH0FTE_0Yc9e6JHj27O9RCQw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+    <script type="text/javascript">var submitted = false;</script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+            onload="if(submitted) {window.location='thankyou.html';}"></iframe>
+    <form action="https://docs.google.com/a/sagebase.org/forms/d/e/1FAIpQLSeoAtVSk1nH_1MIhoifmYvvFHaH0FTE_0Yc9e6JHj27O9RCQw/formResponse"
+          method="post" target="hidden_iframe" onsubmit="submitted=true;">
         <div class="page-header">
             <div class="container">
                 <div class="col-6 offset-3">
-                <h1>Contact Us</h1>
-                <h5>For information about participating and questions around the study, please review the <a href="../faq">FAQ page</a>.</h5>
-                <h5>If you have additional questions or other queries, send us a message.</h5>
-                    </div>
+                    <h1>Contact Us</h1>
+                    <h5>For information about participating and questions around the study, please review the <a
+                            href="../faq">FAQ page</a>.</h5>
+                    <h5>If you have additional questions or other queries, send us a message.</h5>
+                </div>
 
 
                 <!--Thank you message after sending a message in "Contact Us"-->
@@ -132,8 +147,10 @@
                     <li>
                         <p>© 2017 elevateMS</p>
                     </li>
-                    <li><a href="../privacy-policy">Privacy Policy</a></li>|
-                    <li><a href="../faq">FAQs</a></li>|
+                    <li><a href="../privacy-policy">Privacy Policy</a></li>
+                    |
+                    <li><a href="../faq">FAQs</a></li>
+                    |
                     <li><a href="../support">Support</a></li>
                 </ul>
             </div>
